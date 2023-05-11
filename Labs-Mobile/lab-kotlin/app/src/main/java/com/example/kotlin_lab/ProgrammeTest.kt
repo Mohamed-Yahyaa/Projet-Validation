@@ -1,8 +1,7 @@
-package prototype.todolist
+package com.example.kotlin_lab
 
-import prototype.todolist.data.TaskDao
-import prototype.todolist.data.TaskEntry
-import prototype.todolist.data.TaskRepository
+import com.example.kotlin_lab.data.TaskEntry
+import com.example.kotlin_lab.data.TaskRepository
 
 fun main (){
 
@@ -11,8 +10,9 @@ fun main (){
     val task = TaskEntry(1,"Task 1",1,System.currentTimeMillis())
     taskRepository.save(task);
 
+
     // Suprimer une tâche
-    taskRepository.delete(1)
+//    taskRepository.delete(1)
     // Modifier une tâche
     val titleUp = taskRepository.findById(1)
     titleUp.title = "gidf"
