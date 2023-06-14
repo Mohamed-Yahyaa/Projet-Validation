@@ -44,9 +44,7 @@ export const ShowHotel = ({data, setData,selectHotel ,show, setShow}) => {
                         {data.map((item)=>
                             <tr>
                                 <td>
-                                   
-                                   <button className="btn btn-outline-success" onClick={()=>{selectHotel(item)}} >+</button>
-                                      
+                                   <button className="btn btn-outline-success" onClick={()=>{selectHotel(item)}} >+</button> 
                                </td>
                             <td>{item.country}</td>
                             <td>{item.name}</td>

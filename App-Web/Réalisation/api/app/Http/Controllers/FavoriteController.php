@@ -3,10 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Favorite;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
 class FavoriteController extends Controller
 {
+
+    function searsh($name){
+        $client = new Client();
+$response = $client->request('GET', 'http://universities.hipolabs.com/search?country='.$name);
+$body = $response->getBody();
+$data = json_decode($body);
+dd($data);
+    }
   
     public function index()
     {
