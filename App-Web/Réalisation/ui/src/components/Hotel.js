@@ -21,6 +21,7 @@ function Hotel() {
         setData(res.data)
         setLoading(false)
         
+        
     }
     
     useEffect(()=>{
@@ -48,6 +49,7 @@ function Hotel() {
     const getData = ()=>{
         axios.get('http://127.0.0.1:8000/api/favorite').then((res=>{
             setDataSelected(res.data)
+            console.log(res.data)
        }))
     }
     useEffect(() => {
