@@ -57,7 +57,7 @@ class ItemAdapter (private val Univer: ArrayList<Univer>, navController: NavCont
                  Repo().store(univer)
 
                 }
-                Toast.makeText(holder.itemView.context, "Film deleted successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(holder.itemView.context, "save successfully", Toast.LENGTH_SHORT).show()
 
             }
 

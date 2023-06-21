@@ -15,7 +15,7 @@ interface ApiServicesInterface {
 
 
 
-    @POST("store")
+    @POST("store_mob")
     suspend fun store(@Body univer: Univer ):Int
 
     @GET("ListFavorite")

@@ -61,7 +61,7 @@ class FavoriteAdapter(private val Univer: ArrayList<Univer>, navController: NavC
                     Univer.removeAt(position)
                     notifyItemRemoved(position)
                 }
-                Toast.makeText(holder.itemView.context, "Film deleted successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(holder.itemView.context, " delete  successfully", Toast.LENGTH_SHORT).show()
 
             }
            }

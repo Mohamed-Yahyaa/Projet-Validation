@@ -10,7 +10,7 @@ class Dao {
 
     companion object{
         // private var url ="http://192.168.2.46:8000/api/"
-        private var url ="http://0.0.0.0:8000/api/"
+        private var url ="http://192.168.2.25:8000/api/"
         private fun getRetrofit(): Retrofit {
             return Retrofit.Builder()
                 .baseUrl(url)
